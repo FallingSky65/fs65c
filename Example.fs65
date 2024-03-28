@@ -1,0 +1,4 @@
+let x = 9;
+let y = 8;
+let z = x;
+exit add(6, sub(9, 7));
