@@ -26,7 +26,9 @@ _start:
 	ldr X0, [SP], #16
 	mov X0, #0x6
 	str X0, [SP, #-16]!
-	mov X0, #0x9
+	add SP, SP, 0x30
+	ldr X0, [SP]
+	sub SP, SP, 0x30
 	str X0, [SP, #-16]!
 	mov X0, #0x7
 	str X0, [SP, #-16]!
